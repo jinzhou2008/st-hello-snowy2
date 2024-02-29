@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("☃️ Snowy") 
-st.write('Hello this is a test of Snowy!')
+st.write('Hello this is a test of Snowy2!')
 
 import openai
 # from openai import OpenAI
