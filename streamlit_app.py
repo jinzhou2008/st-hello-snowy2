@@ -3,13 +3,16 @@ import streamlit as st
 st.title("☃️ Snowy") 
 st.write('Hello this is a test of Snowy2!')
 
-import openai
+# import openai
 # from openai import OpenAI
 # import re
 # import streamlit as st
 # #from promptsmine import get_system_prompt
 
-
+## Validate Snowflake connection ##
+conn = st.connection("snowflake")
+df = conn.query("select current_warehouse(), current_database(), current_schema()")
+st.write(df)
 
 # # # Set Azure OpenAI API configuration
 # openai.api_type = "azure"
